@@ -41,9 +41,9 @@ The seed script runs automatically on startup and creates sample data.
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | `admin@meal.com` | `meal` |
-| Caregiver | `caregiver@meal.com` | `meal` |
-| Kitchen | `kitchen@meal.com` | `meal` |
+| Admin | `admin@example.com` | `test` |
+| Caregiver | `caregiver@example.com` | `test` |
+| Kitchen | `kitchen@example.com` | `test` |
 
 ## Quick Start without Docker
 

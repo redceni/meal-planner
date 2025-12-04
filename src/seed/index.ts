@@ -8,7 +8,7 @@ export const seed = async (payload: Payload): Promise<void> => {
     collection: 'users',
     where: {
       email: {
-        equals: 'admin@meal.com',
+        equals: 'admin@example.com',
       },
     },
   })
@@ -21,8 +21,8 @@ export const seed = async (payload: Payload): Promise<void> => {
   await payload.create({
     collection: 'users',
     data: {
-      email: 'admin@meal.com',
-      password: 'meal',
+      email: 'admin@example.com',
+      password: 'test',
       role: 'admin',
     },
   })
@@ -30,8 +30,8 @@ export const seed = async (payload: Payload): Promise<void> => {
   await payload.create({
     collection: 'users',
     data: {
-      email: 'caregiver@meal.com',
-      password: 'meal',
+      email: 'caregiver@example.com',
+      password: 'test',
       role: 'caregiver',
     },
   })
@@ -39,8 +39,8 @@ export const seed = async (payload: Payload): Promise<void> => {
   await payload.create({
     collection: 'users',
     data: {
-      email: 'kitchen@meal.com',
-      password: 'meal',
+      email: 'kitchen@example.com',
+      password: 'test',
       role: 'kitchen',
     },
   })
