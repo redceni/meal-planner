@@ -1,0 +1,81 @@
+.status-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.status-badge.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.prepared {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.status-toggle-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.status-toggle-btn.mark-prepared {
+  background-color: #10b981;
+  color: white;
+}
+
+.status-toggle-btn.mark-prepared:hover:not(:disabled) {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.status-toggle-btn.mark-pending {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.status-toggle-btn.mark-pending:hover:not(:disabled) {
+  background-color: #d97706;
+  transform: scale(1.05);
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
